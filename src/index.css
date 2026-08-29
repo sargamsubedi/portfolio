@@ -1,1 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
+
+@theme{
+    /* for background */
+    /* purpleish */
+    --color-primaryColor: #1E0044; 
+
+    /* purpleish pink */
+    --color-secondaryColor: #8338EC;
+
+    /* light pink  */
+    --color-ternaryColor: #9C2EF5;
+
+    /* for text */
+
+    /* whitish */
+    --color-textWhite: #E9DEFF;
+
+    /* blackish */
+    --color-textBlack: #0B001A;
+
+}
+
+
+body{
+    font-family: Inter ;
+}
