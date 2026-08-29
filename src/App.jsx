@@ -1,3 +1,4 @@
+import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="bg-heroBg max-w-300 mx-auto">
       <section className="bg-primaryColor m-3 rounded-2xl">
         <Navbar />
+        <Hero />
       </section>
     </div>
   )
