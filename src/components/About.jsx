@@ -1,0 +1,51 @@
+import myImage from '../assets/tree.jpg'
+import TechStack from './TechStack';
+
+
+
+function About() {
+
+    return (
+        <div className='  py-19 px-20 text-3xl text-textWhite space-y-10'>
+            <div className="flex">
+
+                <div className="text-textWhite max-w-1/2 space-y-10">
+                    <h1 className="text-5xl font-medium">About Me</h1>
+
+                    <p className="leading-10">
+                        I enjoy turning ideas into interfaces that feel simple, intuitive, and enjoyable to use.
+                    </p>
+                    <div className="space-y-5">
+
+                        <p>What I care about</p>
+                        <ul className="list-disc list-inside">
+                            <li>Clean UI</li>
+                            <li>Responsive design</li>
+                            <li>Reusable components</li>
+                            <li>User experience</li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+                <div className="flex flex-1 justify-center items-center">
+
+                    <img src={myImage} width="1280px" height="797px" alt="my image" className=' w-[80%]   aspect-square rounded-full object-center' />
+                </div>
+            </div>
+
+            {/* for tech stack i use */}
+            <div className='space-y-4'>
+                <p className='font-semibold'>Tech Stack</p>
+                <TechStack />
+
+
+            </div>
+        </div>
+    )
+}
+export default About;
