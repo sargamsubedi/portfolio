@@ -1,13 +1,43 @@
 import { create } from "zustand";
-
-const useData = create(()=>(
+import tree from '../assets/tree.jpg'
+const useData = create(() => (
     {
         techStack: [
-            {imgName: "html.svg" , techName:"HTML"},
-            {imgName: "css.svg" , techName:"CSS"},
-            {imgName: "js.svg" , techName:"JavaScript"},
-            {imgName: "react.svg" , techName:"ReactJs"},
-            {imgName: "tailwind.svg" , techName:"TailwindCSS"},
+            { imgName: "html.svg", techName: "HTML" },
+            { imgName: "css.svg", techName: "CSS" },
+            { imgName: "js.svg", techName: "JavaScript" },
+            { imgName: "react.svg", techName: "ReactJs" },
+            { imgName: "tailwind.svg", techName: "TailwindCSS" },
+        ],
+
+        projects: [
+            {
+                img: tree,
+                name: "selhono",
+                description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis facere vitae!",
+                tech: [],
+                liveDemo: "",
+                github: "https://github.com/sargamsubedi/selhono",
+
+            },
+            {
+                img: tree,
+                name: "Youtube Clone",
+                description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis facere vitae!",
+                tech: [],
+                liveDemo: "",
+                github: "https://github.com/sargamsubedi/YoutubeClone",
+
+            },
+            {
+                img: tree,
+                name: "Expense Tracker",
+                description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis facere vitae!",
+                tech: [],
+                liveDemo: "",
+                github: "https://github.com/sargamsubedi/Expense-Tracker/tree/main/exptrack",
+
+            },
         ]
     }
 ))
