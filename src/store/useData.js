@@ -6,8 +6,9 @@ const useData = create(() => (
             { imgName: "html.svg", techName: "HTML" },
             { imgName: "css.svg", techName: "CSS" },
             { imgName: "js.svg", techName: "JavaScript" },
-            { imgName: "react.svg", techName: "ReactJs" },
+            { imgName: "react.svg", techName: "ReactJS" },
             { imgName: "tailwind.svg", techName: "TailwindCSS" },
+            { imgName: "git.svg", techName: "Git" },
         ],
 
         projects: [
