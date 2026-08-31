@@ -2,7 +2,7 @@
 function ProjectCard({ project ,index}) {
     const { name, description, img, livedemo, github, tech } = project;
     return (
-        <div className="border text-xl flex justify-around bg-ternaryColor py-10 px-5 rounded-xl w-full sticky" style={{ top: `${index * 48}px` }}>
+        <div className="text-xl flex justify-around bg-projectCard py-10 px-5 rounded-xl w-full sticky  hover:border-2 border-ternaryColor" style={{ top: `${index * 48}px` }}>
             {/* for content */}
             <div className="flex-1 flex flex-col justify-around items-start space-y-10 px-10">
                 <p className="text-4xl uppercase underline underline-offset-10 font-semibold leading-15">{name} </p>
