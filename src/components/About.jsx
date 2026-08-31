@@ -7,15 +7,16 @@ function About() {
 
     return (
         <div className='  py-19 px-20 text-3xl text-textWhite space-y-10'>
-            <div className="flex">
+                    <h1 className="text-5xl font-medium text-center lg:text-left">About Me</h1>
 
-                <div className="text-textWhite max-w-1/2 space-y-10">
-                    <h1 className="text-5xl font-medium">About Me</h1>
+            <div className="flex flex-col-reverse lg:flex-row gap-10">
 
-                    <p className="leading-10">
+                <div className="text-textWhite lg:max-w-1/2 space-y-10">
+
+                    <p className="text-2xl sm:leading-10 ">
                         I enjoy turning ideas into interfaces that feel simple, intuitive, and enjoyable to use.
                     </p>
-                    <div className="space-y-5">
+                    <div className="space-y-5 text-2xl md:text-3xl lg:text-2xl sm:leading-10 ">
 
                         <p>What I care about</p>
                         <ul className="list-disc list-inside">

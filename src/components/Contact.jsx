@@ -6,12 +6,12 @@ function Contact() {
     return (
 
         <div className='  py-19 px-20 text-3xl text-textWhite space-y-10'>
-            <div className="flex">
+            <h1 className=" text-2xl md:text-3xl lg:text-5xl sm:leading-8 lg:leading-14 font-medium">Contact</h1>
+            <div className="flex gap-10 flex-col md:flex-row">
 
-                <div className="text-textWhite max-w-1/2 space-y-10">
-                    <h1 className="text-5xl font-medium">Contact</h1>
+                <div className="text-textWhite md:max-w-1/2 space-y-10">
 
-                    <p className="leading-10">
+                    <p className=" text-2xl md:text-3xl sm:leading-8">
                         Let's build something together...
                     </p>
 
@@ -24,7 +24,7 @@ function Contact() {
 
                         <div className="flex gap-3 items-center hover:cursor-pointer w-fit hover:scale-[1.05] transition">
                             <img src="email.svg" alt="Email" className="size-10" />
-                            <p>
+                            <p className="wrap-anywhere">
                                 saragamsubedi998@gmail.com
                             </p>
                         </div>

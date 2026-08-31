@@ -2,10 +2,10 @@
 function ProjectCard({ project ,index}) {
     const { name, description, img, livedemo, github, tech } = project;
     return (
-        <div className="text-xl flex justify-around bg-projectCard py-10 px-5 rounded-xl w-full sticky  hover:border-2 border-ternaryColor" style={{ top: `${index * 48}px` }}>
+        <div className="text-xl flex flex-col-reverse md:flex-row gap-10 justify-around bg-projectCard py-10 px-5 rounded-xl w-full sticky  hover:border-2 border-ternaryColor" style={{ top: `${index * 48}px` }}>
             {/* for content */}
             <div className="flex-1 flex flex-col justify-around items-start space-y-10 px-10">
-                <p className="text-4xl uppercase underline underline-offset-10 font-semibold leading-15">{name} </p>
+                <p className="text-2xl md:text-3xl lg:text-4xl leading-10 md:leading-13  uppercase underline underline-offset-10 font-semibold ">{name} </p>
                 <p>{description} </p>
 
                 <div className="flex gap-3 justify-evenly min-w-1/2 ">
@@ -16,7 +16,7 @@ function ProjectCard({ project ,index}) {
             {/* for image */}
             <div className="flex-1  flex justify-center ">
 
-                <img src={img} width="1280px" height="797px" alt="project Image" className=' w-[90%]   aspect-square rounded-lg object-center' />
+                <img src={img} width="1280px" height="797px" alt="project Image" className='w-2/3 md:w-[90%]   aspect-square rounded-lg object-center' />
 
 
             </div>

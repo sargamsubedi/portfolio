@@ -8,7 +8,7 @@ import Project from "./components/Project"
 function App() {
 
   return (
-    <div className="bg-heroBg max-w-300 mx-auto">
+    <div className="bg-heroBg lg:max-w-300 mx-auto">
       <section className="bg-primaryColor m-3 rounded-2xl">
         <Navbar />
         <Hero />
