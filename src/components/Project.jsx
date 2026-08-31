@@ -12,7 +12,7 @@ function Project() {
 
 
             {
-                projects.map((project)=><ProjectCard key={project.name}  project={project}/>)
+                projects.map((project, index)=><ProjectCard key={project.name} index={index} project={project}/>)
                 
             }
 
