@@ -16,7 +16,7 @@ function ProjectCard({ project ,index}) {
             {/* for image */}
             <div className="flex-1  flex justify-center ">
 
-                <img src={img} width="1280px" height="797px" alt="project Image" className='w-2/3 md:w-[90%]   aspect-square rounded-lg object-center' />
+                <img src={img} width="1280px" height="797px" alt="project Image" className='w-2/3 md:w-[90%] object-cover rounded-lg object-center' />
 
 
             </div>
