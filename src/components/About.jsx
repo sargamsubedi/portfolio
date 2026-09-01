@@ -16,7 +16,7 @@ function About() {
                     <p className="text-2xl sm:leading-10 ">
                         I enjoy turning ideas into interfaces that feel simple, intuitive, and enjoyable to use.
                     </p>
-                    <div className="space-y-5 text-2xl md:text-3xl lg:text-2xl sm:leading-10 ">
+                    <div className="space-y-5 text-2xl leading-10 ">
 
                         <p>What I care about</p>
                         <ul className="list-disc list-inside">
