@@ -23,7 +23,7 @@ const useData = create(() => (
                 name: "selhono",
                 description: " A modern and responsive interior design website built with React and Tailwind CSS, featuring a clean layout and elegant UI to showcase design services and projects.",
                 tech: [],
-                liveDemo: "",
+                liveDemo: "https://selhonointerior-17734vvy9-sargamsubedi.vercel.app/",
                 github: "https://github.com/sargamsubedi/selhono",
 
             },
@@ -32,7 +32,7 @@ const useData = create(() => (
                 name: "Youtube Clone",
                 description: "A responsive YouTube home page clone built to recreate the platform's familiar layout and user experience, featuring video cards, navigation, and a clean responsive interface.",
                 tech: [],
-                liveDemo: "",
+                liveDemo: "https://youtube-clone-iyhteszve-sargamsubedi.vercel.app/",
                 github: "https://github.com/sargamsubedi/YoutubeClone",
 
             },
@@ -41,7 +41,7 @@ const useData = create(() => (
                 name: "Expense Tracker",
                 description: "A simple and responsive expense tracking application built with React and Tailwind CSS. Users can add, categorize, edit, and delete expenses while tracking total spending and filtering expenses by category.",
                 tech: [],
-                liveDemo: "",
+                liveDemo: "https://expense-tracker-two-smoky-73.vercel.app/",
                 github: "https://github.com/sargamsubedi/Expense-Tracker/tree/main/exptrack",
 
             },
