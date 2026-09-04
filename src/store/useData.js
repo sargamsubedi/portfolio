@@ -1,10 +1,10 @@
 import { create } from "zustand";
-import tree from '../assets/tree.jpg'
 
 //project SS
 import youtube from '../assets/project_Screenshots/youtube.png'
 import selhono from '../assets/project_Screenshots/selhono.png'
 import expense_tracker from '../assets/project_Screenshots/expense_tracker.png'
+import asian_food_restaurant from '../assets/project_Screenshots/asian_food_restaurant.png'
 
 const useData = create(() => (
     {
@@ -18,6 +18,15 @@ const useData = create(() => (
         ],
 
         projects: [
+                        {
+                img: asian_food_restaurant,
+                name: "Asian Food Restaurant",
+                description: "A modern and responsive Asian food restaurant website designed to showcase authentic cuisine, featured dishes, and a welcoming dining experience. Built with React and Tailwind CSS, focusing on clean UI, responsive layouts, and an engaging user experience.",
+                tech: [],
+                liveDemo: "https://asian-food-restaurant.vercel.app/",
+                github: "https://github.com/sargamsubedi/AsianFood_Restaurant",
+
+            },
             {
                 img: selhono,
                 name: "selhono",
