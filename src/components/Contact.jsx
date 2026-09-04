@@ -1,8 +1,49 @@
-import { useNavigate } from "react-router";
+import { useState } from "react";
 
 function Contact() {
 
-    const navigate = useNavigate();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        setStatus("sending");
+
+        const form = e.target;
+        const data = new FormData(form);
+
+        try {
+            const response = await fetch(
+                "https://formspree.io/f/xyeypdqk",
+                {
+                    method: "POST",
+                    body: data,
+                    headers: {
+                        Accept: "application/json",
+                    },
+                }
+            );
+
+            if (response.ok) {
+                setStatus("success");
+                form.reset();
+                setTimeout(() => {
+                    setStatus("noaction")
+                }, 2000);
+            } else {
+                setStatus("error");
+                setTimeout(() => {
+                    setStatus("noaction")
+                }, 2000);
+            }
+        } catch (error) {
+            setStatus("error");
+            setTimeout(() => {
+                setStatus("noaction")
+            }, 2000);
+        }
+    };
+
+    const [status, setStatus] = useState("noaction")
+
     return (
 
         <div className='  py-19 px-20 text-3xl text-textWhite space-y-10'>
@@ -51,27 +92,52 @@ function Contact() {
                 </div>
 
                 {/* contact form */}
-                <div className="flex-1 space-y-5 my-10 text-xl">
+                <form
+                    className="flex-1 space-y-5 my-10 text-xl"
+                    onSubmit={handleSubmit}
+                >
+
 
                     <div className="flex flex-col gap-3 max-w-2/3">
-                        <label htmlFor="name">Name</label>
-                        <input type="text" name="" id="name" />
+                        <label htmlFor="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                        />
                     </div>
 
                     <div className="flex flex-col gap-3 max-w-2/3">
-
-                        <label htmlFor="Email">Email</label>
-                        <input type="email" name="" id="Email" />
+                        <label htmlFor="message">Message</label>
+                        <textarea
+                            name="message"
+                            id="message"
+                            required
+                        />
                     </div>
 
-                    <div className="flex flex-col gap-3 max-w-2/3">
+                    <button
+                        className="mt-4 bg-purple-600 px-5 py-3 rounded-3xl hover:bg-purple-700 hover:scale-[1.05] transition"
+                        type="submit"
+                        disabled={status === "sending"}
+                    >
+                        {status === "sending" ? "Sending..." : "Send Message"}
+                    </button>
 
-                        <label htmlFor="Message">Message</label>
-                        <textarea name="" id="Message" />
-                    </div>
+                    {status === "success" && (
+                        <p className="text-green-500">
+                            Message sent successfully!
+                        </p>
+                    )}
 
-                    <button className="mt-4 bg-purple-600 px-5 py-3 rounded-3xl hover:bg-purple-700 hover:scale-[1.05] transition">Send Message</button>
-                </div>
+                    {status === "error" && (
+                        <p className="text-red-500">
+                            Something went wrong. Please try again.
+                        </p>
+                    )}
+                </form>
+
             </div>
         </div>
     )
