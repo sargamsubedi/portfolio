@@ -8,7 +8,7 @@ function Project() {
     return (
         <div className="text-textWhite w-full space-y-5 text-2xl  py-19 px-10 ">
 
-            <h1 className="text-5xl font-medium">My Projects</h1>
+            <h1 className="text-3xl md:text-5xl font-medium">My Projects</h1>
 
 
             {

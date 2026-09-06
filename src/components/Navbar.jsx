@@ -2,7 +2,7 @@
 function Navbar()
 {
     return(
-        <nav className="text-textWhite flex justify-between  py-5 px-20 ">
+        <nav className="text-textWhite flex justify-between  py-5 px-10   md:px-20 ">
 
             <p className="italic text-xl sm:text-3xl">Sargam Subedi</p>
 

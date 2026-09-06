@@ -7,7 +7,7 @@ function About() {
 
     return (
         <div className='  py-19 px-20 text-3xl text-textWhite space-y-10'>
-                    <h1 className="text-5xl font-medium text-center lg:text-left">About Me</h1>
+                    <h1 className=" text-3xl md:text-5xl font-medium text-center lg:text-left">About Me</h1>
 
             <div className="flex flex-col-reverse lg:flex-row gap-10">
 
