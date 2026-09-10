@@ -2,6 +2,7 @@ import { create } from "zustand";
 
 //project SS
 import youtube from '../assets/project_Screenshots/youtube.png'
+import starmart from '../assets/project_Screenshots/starmart.png'
 import selhono from '../assets/project_Screenshots/selhono.png'
 import expense_tracker from '../assets/project_Screenshots/expense_tracker.png'
 import asian_food_restaurant from '../assets/project_Screenshots/asian_food_restaurant.png'
@@ -18,6 +19,15 @@ const useData = create(() => (
         ],
 
         projects: [
+                        {
+                img: starmart,
+                name: "SmartMart Ecommerce",
+                description: "StarMart is a responsive e-commerce web application built with React, featuring dynamic product data powered by the DummyJSON API. It uses React Router for seamless navigation and React Query for efficient data fetching and caching. The interface is designed with Tailwind CSS to provide a clean, modern, and responsive shopping experience across devices.",
+                tech: [],
+                liveDemo: "https://star-mart-ecommerce-git-main-sargamsubedi.vercel.app/",
+                github: "https://github.com/sargamsubedi/StarMart-ecommerce",
+
+            },
                         {
                 img: asian_food_restaurant,
                 name: "Asian Food Restaurant",
