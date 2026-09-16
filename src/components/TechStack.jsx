@@ -4,7 +4,7 @@ function TechStack() {
 
     const techStack = useData(state => state.techStack);
     return (
-        <div className="flex flex-wrap gap-5 items-center divide-x-2 text-xl">
+        <div className="flex flex-wrap gap-5 items-center sm:divide-x-2 text-xl">
             {
                 techStack.map((tech) => (
                     <div key={tech.techName} className="flex gap-3 items-center px-3">

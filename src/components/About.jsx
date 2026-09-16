@@ -7,34 +7,25 @@ import ProfilePicture from '../assets/profile_picture.png'
 function About() {
 
     return (
-        <div className='  py-19 px-20 text-3xl text-textWhite space-y-10'>
+        <div className='  py-19 px-5 sm:px-10 md:px-20 text-2xl text-textWhite space-y-10'>
                     <h1 className=" text-3xl md:text-5xl font-medium text-center lg:text-left">About Me</h1>
 
             <div className="flex flex-col-reverse lg:flex-row gap-10">
 
-                <div className="text-textWhite lg:max-w-1/2 space-y-10">
+                <div className="text-textWhite lg:max-w-1/2 space-y-10 font-normal">
 
-                    <p className="text-2xl sm:leading-10 ">
-                        I enjoy turning ideas into interfaces that feel simple, intuitive, and enjoyable to use.
+                    <p>
+                    Hi, I'm a Frontend Developer who enjoys turning ideas into clean, interactive, and user-friendly web experiences.
                     </p>
-                    <div className="space-y-5 text-2xl leading-10 ">
-
-                        <p>What I care about</p>
-                        <ul className="list-disc list-inside">
-                            <li>Clean UI</li>
-                            <li>Responsive design</li>
-                            <li>Reusable components</li>
-                            <li>User experience</li>
-
-                        </ul>
-                    </div>
-
+                    <p>I work primarily with HTML, CSS, JavaScript, React, and modern frontend tools, with a strong focus on responsive design, accessibility, performance, and writing maintainable code.</p>
+                    <p>I'm always learning, experimenting with new technologies, and looking for better ways to build for the web.</p>
+                  
 
                 </div>
 
 
 
-                <div className="flex flex-1 justify-center items-center">
+                <div className="flex flex-1 justify-center items-center px-5">
 
                     <img src={ProfilePicture} width="2469px" height="2760px" alt="my image" className='w-[80%] aspect-square object-center rounded-full bg-white   ' />
                 </div>
