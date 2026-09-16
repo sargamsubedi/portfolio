@@ -46,7 +46,7 @@ function Contact() {
 
     return (
 
-        <div className='  py-19 px-20 text-3xl text-textWhite space-y-10'>
+        <div className='  py-19 px-5 sm:px-10 md:px-20 text-3xl text-textWhite space-y-10'>
             <h1 className="text-3xl md:text-5xl font-medium">Contact</h1>
             <div className="flex gap-10 flex-col md:flex-row">
 
