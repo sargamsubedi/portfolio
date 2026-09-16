@@ -1,5 +1,6 @@
-import myImage from '../assets/tree.jpg'
+
 import TechStack from './TechStack';
+import ProfilePicture from '../assets/profile_picture.png'
 
 
 
@@ -35,7 +36,7 @@ function About() {
 
                 <div className="flex flex-1 justify-center items-center">
 
-                    <img src={myImage} width="1280px" height="797px" alt="my image" className=' w-[80%]   aspect-square rounded-full object-center' />
+                    <img src={ProfilePicture} width="2469px" height="2760px" alt="my image" className='w-[80%] aspect-square object-center rounded-full bg-white   ' />
                 </div>
             </div>
 
